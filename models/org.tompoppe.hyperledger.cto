@@ -1,0 +1,30 @@
+/**
+ * Write your model definitions here
+ */
+
+namespace org.tompoppe.hyperledger
+
+participant AccountParticipant identified by BIC{
+    o String BIC
+}
+participant AccountOwner extends AccountParticipant {
+}
+participant AccountServicer extends AccountParticipant {
+}
+
+asset Account identified by IBAN {
+    o String IBAN
+    o String description
+    o Double balance
+    --> AccountOwner owner
+    --> AccountServicer ServicerName
+}
+
+transaction Credit {
+    o Double movement
+    --> Account account
+}
+transaction Debit {
+    o Double movement
+    --> Account account
+}

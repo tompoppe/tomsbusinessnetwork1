@@ -8,6 +8,7 @@ participant AccountParticipant identified by BIC{
     o String BIC
 }
 participant AccountOwner extends AccountParticipant {
+    
 }
 participant AccountServicer extends AccountParticipant {
 }
@@ -17,7 +18,7 @@ asset Account identified by IBAN {
     o String description
     o Double balance
     --> AccountOwner owner
-    --> AccountServicer ServicerName
+    --> AccountServicer servicer
 }
 
 transaction Credit {

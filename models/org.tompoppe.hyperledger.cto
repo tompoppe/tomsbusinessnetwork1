@@ -21,11 +21,11 @@ asset Account identified by IBAN {
     --> AccountServicer servicer
 }
 
-transaction Credit {
+transaction CreditAccount {
     o Double movement
     --> Account account
 }
-transaction Debit {
+transaction DebitAccount {
     o Double movement
     --> Account account
 }

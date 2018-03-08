@@ -1,0 +1,1 @@
+composer-rest-server -c admin@tomsnetwork1 -n never -w true

@@ -1,9 +1,5 @@
-Damien.card
-tom.card
-Damien./.DS_Store
-Damien./credentials/certificate
-Damien..zip
-Damien./metadata.json
-Damien./connection.json
-Damien./credentials/privateKey
+*.card
 startrest1.sh
+composer-logs
+
+

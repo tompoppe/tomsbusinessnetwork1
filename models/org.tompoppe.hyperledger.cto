@@ -4,10 +4,11 @@
 
 namespace org.tompoppe.hyperledger
 
-participant AccountParticipant identified by BIC{
+abstract participant AccountParticipant identified by BIC{
     o String BIC
 }
 participant AccountOwner extends AccountParticipant {
+    o String ownerName optional
     
 }
 participant AccountServicer extends AccountParticipant {

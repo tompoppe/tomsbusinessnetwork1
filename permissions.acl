@@ -13,6 +13,6 @@ rule SystemACL {
   description:  "System ACL to permit all access"
   participant: "ANY"
   operation: ALL
-  resource: "org.hyperledger.composer.system.**"
+  resource: "org.hyperledger.composer.system.*"
   action: ALLOW
 }

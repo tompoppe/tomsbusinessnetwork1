@@ -1,6 +1,7 @@
 *.card
 startrest1.sh
 composer-logs
+composer-report*
 *.bna
 
 

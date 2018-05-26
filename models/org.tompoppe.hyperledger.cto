@@ -30,3 +30,15 @@ transaction DebitAccount {
     o Double movement
     --> Account account
 }
+event newDebit{
+
+}
+event newCredit{
+
+}
+transaction CreateMessageEvent{
+    o String uuid
+}
+
+event newMessage{
+}

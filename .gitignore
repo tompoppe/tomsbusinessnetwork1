@@ -2,6 +2,7 @@
 startrest1.sh
 composer-logs
 composer-report*
+*.card
 *.bna
 
 
